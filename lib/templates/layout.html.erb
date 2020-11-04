@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    section, article, aside, footer, header, nav {
+      display: block;
+    }
+
+    #grid {
+      display: grid;
+      grid-template: 1fr / max-content minmax(auto, 57ch);
+      grid-gap: 2rem;
+      padding: 1rem;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+    }
+
+    article > p:first-child {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <main id='grid'>
+    <nav>
+      <% filenames.each do |fn| %>
+        <a href="<%= fn %>.html"><%= fn.gsub('_', ' ') %></a><br>
+      <% end %>
+    </nav>
+    <article>
+      <%= contents %>
+    </article>
+  </main>
+</body>
+</html>
