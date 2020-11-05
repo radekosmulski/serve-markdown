@@ -1,12 +1,12 @@
 Gem::Specification.new do |s|
   s.name        = 'serve-markdown'
-  s.version     = '0.0.0'
+  s.version     = '0.0.2'
   s.date        = '2020-11-03'
   s.summary     = "Serve markdown files from current directory on localhost."
   s.description = "A simple solution for serving markdown files from current directory."
   s.authors     = ["Radek Osmulski"]
   s.email       = 'rosmulski@gmail.com'
-  s.files       = Dir['lib/*.rb', 'templates/*.html.erb']
+  s.files       = Dir['lib/*.rb', 'lib/templates/*.html.erb']
   s.homepage    =
     'https://rubygems.org/gems/serve-markdown'
   s.license       = 'MIT'
