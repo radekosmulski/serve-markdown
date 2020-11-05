@@ -1,9 +1,9 @@
-require 'pathname'
-require 'fileutils'
 require 'erubi'
 require 'tilt'
 require 'webrick'
 require 'optparse'
+require 'pathname'
+require 'fileutils'
 
 @options = {}
 OptionParser.new do |opts|
