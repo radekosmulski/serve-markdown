@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'serve-markdown'
-  s.version     = '0.0.5'
+  s.version     = '0.0.6'
   s.date        = '2020-11-03'
   s.summary     = "Serve markdown files from current directory on localhost."
   s.description = "A simple solution for serving markdown files from current directory."

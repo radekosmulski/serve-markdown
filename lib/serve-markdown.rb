@@ -35,6 +35,8 @@ generate_html = Proc.new do
   end
 end
 
+generate_html.call
+
 listener = Listen.to('.') do |modified, added ,removed|
   generate_html.call
 end
