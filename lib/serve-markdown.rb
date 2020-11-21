@@ -37,7 +37,7 @@ end
 
 generate_html.call
 
-listener = Listen.to('.') do |modified, added ,removed|
+listener = Listen.to('.', only: /\.md/) do |modified, added ,removed|
   generate_html.call
 end
 listener.start
